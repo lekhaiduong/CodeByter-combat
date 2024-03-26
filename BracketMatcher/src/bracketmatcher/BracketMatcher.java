@@ -5,6 +5,7 @@
 package bracketmatcher;
 
 import java.util.Scanner;
+import java.util.Stack;
 
 /**
  *
@@ -23,12 +24,24 @@ public class BracketMatcher {
      * str contains no brackets return 1
      */
     public static int BracketMatcher(String str) {
-        return 1;
+        Stack s = new Stack();
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) == '(') {
+                s.push('(');
+            } else if (str.charAt(i) == ')') {
+                if (s.size() == 0) {
+                    return 0; //false
+                } else {
+                    s.pop();
+                }
+            }
+        }
+        return s.size() == 0 ? 1 : 0;
     }
-    
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println(BracketMatcher(sc.nextLine()));
     }
-    
+
 }
