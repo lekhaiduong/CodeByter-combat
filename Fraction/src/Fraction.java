@@ -12,7 +12,10 @@ import java.util.Scanner;
 public class Fraction {
     
     public static int fraction(int num) {
-        return 1;
+        if (num == 0 || num == 1) {
+            return 1;
+        }
+        return num * fraction(num - 1);
     }
     
     public static void main(String[] args) {
