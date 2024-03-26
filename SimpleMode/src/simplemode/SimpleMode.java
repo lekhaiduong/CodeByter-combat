@@ -10,11 +10,12 @@ package simplemode;
  */
 public class SimpleMode {
 
-    /**
-     * @param args the command line arguments
-     */
+    public static int SimpleMode(int[] arr) {
+        return 1;
+    }
+
     public static void main(String[] args) {
         // TODO code application logic here
     }
-    
+
 }

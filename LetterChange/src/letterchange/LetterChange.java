@@ -4,6 +4,8 @@
  */
 package letterchange;
 
+import java.util.Scanner;
+
 /**
  *
  * @author admin
@@ -11,10 +13,18 @@ package letterchange;
 public class LetterChange {
 
     /**
-     * @param args the command line arguments
+     * this function is use to change the letter 1 unit. For example a -> b, b->c, c->d, ... , z->a
+     * If the character after change is belong to 'u, e, o, a, i' then uppercase them
+     * The number and specialChar will keep
+     * Sample output: hello*4 -> Ifmmp*4
      */
+    public static String LetterChange(String str) {
+        return "1";
+    }
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner sc = new Scanner(System.in);
+        System.out.println(LetterChange(sc.nextLine()));
     }
     
 }

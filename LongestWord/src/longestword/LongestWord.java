@@ -4,17 +4,22 @@
  */
 package longestword;
 
+import java.util.Scanner;
+
 /**
  *
- * @author admin
+ *this function is use to find the longest word in a string user inputted. 
+ * The string will not count the special character
  */
 public class LongestWord {
-
-    /**
-     * @param args the command line arguments
-     */
+    
+    public static String LongestWord(String str) { //hello worldddd -> wordddd(longest word in string)
+        return "1";
+    }
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner sc = new Scanner(System.in);
+        System.out.println(LongestWord(sc.nextLine()));
     }
     
 }

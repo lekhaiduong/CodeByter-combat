@@ -4,17 +4,22 @@
  */
 package runlength;
 
+import java.util.Scanner;
+
 /**
  *
- * @author admin
+ * this function is use to count the appearance of character which next to same
+ * character and return the count + character
  */
 public class RunLength {
-
-    /**
-     * @param args the command line arguments
-     */
+    
+    public static String runLength(String str) { //helloo worlf -> he2l2o worlf
+        return "1";
+    }
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner sc = new Scanner(System.in);
+        System.out.println(runLength(sc.nextLine()));
     }
     
 }

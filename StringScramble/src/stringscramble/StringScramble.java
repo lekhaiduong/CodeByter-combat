@@ -4,17 +4,25 @@
  */
 package stringscramble;
 
-/**
- *
- * @author admin
- */
+import java.util.Scanner;
+
 public class StringScramble {
 
     /**
-     * @param args the command line arguments
+     * *
+     * This function is use to compare 2 string and decide if their can swap to
+     * other
+     *
+     * @return true and false
      */
+    public static String StringScramble(String str1, String str2) { //cdore - coder --> true
+
+        return "1";
+    }
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner sc = new Scanner(System.in);
+        System.out.println(StringScramble(sc.nextLine(), sc.nextLine()));
     }
     
 }
